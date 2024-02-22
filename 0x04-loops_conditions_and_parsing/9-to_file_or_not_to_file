@@ -2,14 +2,14 @@
 #check
 
 filepath="school"
-if [ -e $filepath ]; then
+if [ -e "$filepath" ]; then
 	echo "school file exists"
-	if [ ! -s $filepath ]; then
+	if [ ! -s "$filepath" ]; then
 		echo "school file is  empty"
 	else
 		echo "school file is not empty"
 	fi
-	if [ -f $filepath ]; then
+	if [ -f "$filepath" ]; then
 		echo "school is a regular file"
 	fi
 else
